@@ -8,6 +8,7 @@ import Input from "../../components/inputs/Input";
 
 import AuthSocialButton from "./AuthSocialButton";
 import Button from "../../components/Button";
+import axios from "axios";
 
 type Variant = "LOGIN" | "REGISTER";
 
@@ -31,6 +32,7 @@ export default function AuthForm() {
     if (variant === "LOGIN") {
     }
     if (variant === "REGISTER") {
+        axios.post("/api/register", data)
     }
   };
 
