@@ -47,10 +47,10 @@ export default function ConversationBox({
   }, [userEmail, lastMessage]);
 
   const lastMessageText = useMemo(() => {
-    if (lastMessage.image) {
+    if (lastMessage?.image) {
       return "Sent an image";
     }
-    if (lastMessage.body) {
+    if (lastMessage?.body) {
       return lastMessage.body;
     }
     return "Started a conversation";
@@ -82,7 +82,7 @@ export default function ConversationBox({
             <p className="text-sm font-medium text-gray-900">
               {data.name || otherUser.name}
             </p>
-            {lastMessage.createdAt && (
+            {lastMessage?.createdAt && (
               <p
                 className="
                 text-xs

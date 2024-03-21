@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     domains: [
       "avatars.githubusercontent.com",
-      "res.cloundinary.com",
+      "res.cloudinary.com",
       "lh3.googleusercontent.com",
     ],
   },
